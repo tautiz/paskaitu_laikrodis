@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock &amp; Timer</title>
+    <meta name="description" content="A handy timer and clock for CodeAcademy lessons">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" href="favicon.png" sizes="32x32">
+    <meta property="og:image" content="https://uxlinks.lt/clock/og.png">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div id="clock">
+    <div id="hours">23</div>
+    <div class="blinker blink">:</div>
+    <div id="minutes">59</div>
+    <div class="blinker blink">:</div>
+    <div id="seconds">59</div>
+</div>
+
+<div id="timer-label" data-placeholder="Pertrauka" contenteditable="true" spellcheck="false">
+    Pertrauka
+</div>
+
+<div id="settings">
+    <div id="timers" class="group">
+        <div class="btn active" data-count="0" tabindex="0">⏱ Clock</div>
+        <div class="btn" data-count="20" tabindex="0">20 min</div>
+        <div class="btn" data-count="15" tabindex="0">15 min</div>
+        <div class="btn" data-count="10" tabindex="0">10 min</div>
+        <div class="btn" data-count="5" tabindex="0">5 min</div>
+        <div class="btn" id="custom" contenteditable tabindex="0">X min</div>
+    </div>
+
+    <div id="labels" class="group">
+        <div class="btn active" tabindex="0">Pertrauka</div>
+        <div class="btn" tabindex="0">Užduotis</div>
+        <div class="btn" tabindex="0">Liko</div>
+    </div>
+
+    <div id="sound" class="group">
+        <div class="btn active">Sound ON</div>
+    </div>
+</div>
+
+<audio id="sound-stop" src="gong-sound.mp3"></audio>
+
+<script src="./js/clock.js"></script>
+
+</body>
+</html>
