@@ -49,7 +49,23 @@ function stopClock() {
     clearInterval(clockInterval);
 }
 
-startClock(); /* calling currentTime() function to initiate the process */
+// startClock(); /* calling currentTime() function to initiate the process */
+
+// function checkFlagStatus() {
+//     // Get flag value from flag.json file
+//     let flagFile = fetch('/flag.json', {cache: "no-store"})
+//         .then(response => response.json())
+//         .then(data => {
+//             let flag = data.flag;
+//
+//             if (flag === true) {
+//                 clearInterval(hasToPlaySound);
+//                 flag = 0;
+//             }
+//         });
+// }
+//
+// hasToPlaySound = setInterval(checkFlagStatus, 1000); /* setting timer */
 
 
 // Fullscreen
